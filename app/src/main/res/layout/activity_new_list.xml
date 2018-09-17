@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_to_do"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="4dp"
+    tools:context=".ui.NewList">
+
+
+    <LinearLayout
+        android:id="@+id/ll_add_todo_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_add_plus_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/add_note_v"/>
+
+        <EditText
+            android:id="@+id/editListName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/add_a_todo"
+            android:singleLine="false"
+            android:paddingStart="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/ll_add_todo_id"
+        android:layout_alignBottom="@+id/show_completed"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        android:drawableLeft="@drawable/plus_circle_icon"
+        android:text="add"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/show_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/listimg_v"
+        android:text="@string/show_todo" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/completed_todos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_completed"
+        android:layout_marginTop="10dp"
+        android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+</RelativeLayout>

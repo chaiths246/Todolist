@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="title_activity_new_list">newList</string>
+    <string name="textviewListName">Enter a list Name to be added</string>
+    <string name="add_a_todo">Add a to-do...</string>
+    <string name="show_todo">SHOW COMPLETED TO-DOS</string>
+    <string name="inbox_to_do">Add a to-do in "Inbox"...</string>
+    <string name="product_name">Product name</string>
+    <string name="enter_name">Enter name</string>
+</resources>
